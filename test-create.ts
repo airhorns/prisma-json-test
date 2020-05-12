@@ -20,13 +20,13 @@ const main = async () => {
   });
 
   // also errors
-  await prisma.post.create({
-    data: {
-      title: "A post with json",
-      content: "stuff",
-      metafields: { foo: "bar" },
-    },
-  });
+  // await prisma.post.create({
+  //   data: {
+  //     title: "A post with json",
+  //     content: "stuff",
+  //     metafields: { foo: "bar" },
+  //   },
+  // });
 
   console.log(await prisma.post.findMany());
 };
